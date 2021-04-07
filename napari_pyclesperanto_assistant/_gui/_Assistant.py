@@ -15,7 +15,7 @@ class Assistant(QWidget):
     """
 
     def __init__(self, napari_viewer):
-        super().__init__()
+        super().__init__(parent=napari_viewer.window._qt_window)
 
         self.font = QtGui.QFont('Arial', 8)
 
