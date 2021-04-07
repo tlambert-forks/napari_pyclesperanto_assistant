@@ -73,7 +73,7 @@ jobs:
         run: |
           python --version
           python -m pip install --upgrade pip
-          pip install pytest
+          pip install wheel setuptools pytest pyqt5
           pip install -e .
       # this runs the platform-specific tests declared in tox.ini
       #- name: Install tox-conda
