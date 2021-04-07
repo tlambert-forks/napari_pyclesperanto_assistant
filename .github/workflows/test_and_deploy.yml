@@ -74,6 +74,7 @@ jobs:
           python --version
           python -m pip install --upgrade pip
           pip install wheel setuptools pytest pyqt5 pytest-qt
+          pip install napari
           # pip install -e .
       # this runs the platform-specific tests declared in tox.ini
       #- name: Install tox-conda
